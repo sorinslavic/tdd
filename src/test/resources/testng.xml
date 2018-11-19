@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="test-ng" verbose="1" data-provider-thread-count="10" preserve-order="false" thread-count="20">
+    <listeners>
+        <listener class-name="tdd.test.testng.TestCaseListener"></listener>
+    </listeners>
+    <test name="priority-test" verbose="1" parallel="classes" thread-count="10">
+        <packages>
+            <package name="tdd.test.threads"/>
+        </packages>
+    </test>
+</suite>
